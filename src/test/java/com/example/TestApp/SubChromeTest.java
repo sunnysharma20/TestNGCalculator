@@ -44,6 +44,7 @@ public class SubChromeTest {
 
 	    chromeOptions.addArguments("--no-sandbox");
 	    driver = new ChromeDriver(chromeOptions); 
+	    driver = webdriver.Chrome(ChromeDriverManager(version="92.0.4515.107").install())
 	    System.out.println("driver!!");
 
             driver.get(myURL);
